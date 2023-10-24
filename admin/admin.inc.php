@@ -4,9 +4,9 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 // Includes
 include_once(PHPWG_ROOT_PATH . 'admin/include/tabsheet.class.php');
-require_once(PHPWG_THEMES_PATH . 'bootstrap_darkroom/include/config.php');
+require_once(PHPWG_THEMES_PATH . 'newbootstrap_darkroom/include/config.php');
 
-load_language('theme.lang', PHPWG_THEMES_PATH.'bootstrap_darkroom/');
+load_language('theme.lang', PHPWG_THEMES_PATH.'newbootstrap_darkroom/');
 
 // Constants
 define('THEME_ID', basename(dirname(dirname(__FILE__))));
@@ -20,11 +20,11 @@ if (!in_array($page['tab'], array(TAB_SETTINGS, TAB_ABOUT))) {
     $page['tab'] = TAB_SETTINGS;
 }
 
-$themeconfig = new \BootstrapDarkroom\Config();
+$themeconfig = new \newBootstrapDarkroom\Config();
 
 // Save settings
 if ($page['tab'] == TAB_SETTINGS) {
-    if (isset($_POST['boostrap_darkroom_settings'])) {
+    if (isset($_POST['newboostrap_darkroom_settings'])) {
         $themeconfig->fromPost($_POST);
         $themeconfig->save();
     }
