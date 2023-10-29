@@ -1,5 +1,4 @@
 # Newbootstrap
-    {combine_css path='themes/newbootstrap_darkroom/assets/photography-icons/css/PhotographyIcons.css' order=-13}
     {combine_css path='themes/newbootstrap_darkroom/node_modules/bootstrap-social/bootstrap-social.css' order=-12}
 {foreach from=$themes item=theme}
 {if $theme.load_css}
