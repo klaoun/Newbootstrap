@@ -6,6 +6,7 @@ Description: A mobile-ready & feature-rich theme based on Boostrap 5, with Photo
 Theme URI:
 Author:
 Author URI:
+Has Settings: true
 */
 require_once(PHPWG_THEMES_PATH . 'newbootstrap_darkroom/include/themecontroller.php');
 require_once(PHPWG_THEMES_PATH . 'newbootstrap_darkroom/include/config.php');
